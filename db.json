@@ -172,5 +172,12 @@
       "Location": "Nepal",
       "Education": "S.L.C"
     }
+  ],
+  "users": [
+    {
+      "username": "Yuki",
+      "password": "1234"
+    },
+    { "username": "Shyam", "password": "5678" }
   ]
 }

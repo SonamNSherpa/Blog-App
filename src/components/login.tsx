@@ -18,16 +18,17 @@ const LoginPage = () => {
   }
   const handleLogin = async () => {
     try {
-      const response = await axios.get(".././../db.json");
+      const response = await axios.get("http://localhost:3001/users");
       console.log("Server Response", response.data);
       const data = response.data;
 
-      const user = data.users.find(
+      const user = data.find(
         (u: User) => u.username === username && u.password === password
       );
 
       if (user) {
         // Authentication successful, you can redirect or set a token here
+
         console.log("Login successful", user);
         setError("");
       } else {
